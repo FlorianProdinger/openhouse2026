@@ -16,11 +16,11 @@ def read_channel(data):
 
 
 def read_data():
-    channel_data_dic = {0: [], 1: [], 2: []}
+    channel_data_dic = {0: [], 1: []}
 
     # Takes 10 readings across 0.5 seconds
     for x in range(10):
-        for i in range(3):
+        for i in range(2):
             channel_data_dic[i].append(read_channel(i))
         time.sleep(0.05)
 
@@ -39,9 +39,8 @@ if __name__ == "__main__":
 
             # Format the output on a single line
             output_str = (
-                f"\rCH 0: {averages[0]:6.1f} | "
-                f"CH 1: {averages[1]:6.1f} | "
-                f"CH 2: {averages[2]:6.1f}"
+                f"\rSensor 1: {averages[0]:6.1f} | "                
+                f"Sensor 2: {averages[1]:6.1f}"
             )
 
             # \r moves the cursor back to the line start; flush forces immediate output
