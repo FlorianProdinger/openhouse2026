@@ -1,2 +1,3 @@
 The plan for the open house event is to host a Jupyter Notebooks server on the Raspberry Pi, which can read data from the attached sensors and perform simple data processing and analysis on previously accumulated data.
 # openhouse2026
+# openhouse2026
